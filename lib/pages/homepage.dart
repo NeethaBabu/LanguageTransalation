@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: Container(padding: EdgeInsets.symmetric(horizontal: 50,vertical: 50),
-          child: Text(context.formatString(LocaleData.body, ["NEETHA"],),
+          child: Text(context.formatString(LocaleData.body, ["Neetha"],),
             style: TextStyle(
               color: Colors.purple,
               fontSize:20,

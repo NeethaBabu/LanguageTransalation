@@ -1,12 +1,12 @@
 import 'package:flutter_localization/flutter_localization.dart';
 
 List<MapLocale> LOCALES = [
-  MapLocale("en", LocaleData.EN),
-  MapLocale("de", LocaleData.DE),
-  MapLocale("zh", LocaleData.ZH),
-  MapLocale("ml", LocaleData.ML),
-  MapLocale("ta", LocaleData.TA),
-  MapLocale("hi", LocaleData.HI),
+  const MapLocale("en", LocaleData.EN),
+  const MapLocale("de", LocaleData.DE),
+  const MapLocale("zh", LocaleData.ZH),
+  const MapLocale("ml", LocaleData.ML),
+  const MapLocale("ta", LocaleData.TA),
+  const MapLocale("hi", LocaleData.HI),
 ];
 mixin LocaleData{
   static const String title = 'title';

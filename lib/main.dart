@@ -4,18 +4,17 @@ import 'package:flutter_languagetrans/pages/homepage.dart';
 import 'package:flutter_localization/flutter_localization.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-   MyApp({super.key});
+   const MyApp({super.key});
 
   @override
   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-
   final FlutterLocalization localization = FlutterLocalization.instance;
 
   @override
@@ -31,7 +30,7 @@ class _MyAppState extends State<MyApp> {
       title: 'MultiLanguage',
       supportedLocales: localization.supportedLocales,
       localizationsDelegates: localization.localizationsDelegates,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 

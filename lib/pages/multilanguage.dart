@@ -48,7 +48,7 @@ class _MultiLanState extends State<MultiLan> {
                   },
                   child: Center(
                     child: Text(language,
-                      style: TextStyle(fontSize: 18),
+                      style: const TextStyle(fontSize: 18),
                     ),
                   ),
                 ),
@@ -56,13 +56,13 @@ class _MultiLanState extends State<MultiLan> {
             ),
           ),
           Container (
-            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 50),
+            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 50),
             child: Text(
               context.formatString(
                 LocaleData.body,
                 ["Neetha"],
               ),
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.purple,
                 fontSize: 20,
               ),

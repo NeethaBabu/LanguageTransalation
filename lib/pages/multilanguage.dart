@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localization/flutter_localization.dart';
-
 import '../localization/locales.dart';
 
 class MultiLan extends StatefulWidget {
@@ -52,7 +50,8 @@ class _MultiLanState extends State<MultiLan> {
                     ),
                   ),
                 ),
-              )).toList(),
+              ),
+              ).toList(),
             ),
           ),
           Container (

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_languagetrans/pages/multilanguage.dart';
 import 'package:flutter_languagetrans/pages/profile.dart';
+import 'package:flutter_languagetrans/pages/welcome.dart';
 
 class NavDrawer extends StatelessWidget {
   const NavDrawer({super.key});
@@ -20,7 +21,11 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.input),
             title: const Text('Welcome'),
-            onTap: () => {},
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const WelcomePage(),
+              ),
+            ),
           ),
           ListTile(
             leading: const Icon(Icons.verified_user),

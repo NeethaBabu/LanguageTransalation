@@ -38,7 +38,7 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.border_color),
-            title: const Text('language change'),
+            title: const Text('Change Language'),
             onTap: () =>  Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) => const MultiLan(),

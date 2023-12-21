@@ -4,7 +4,8 @@ List<MapLocale> LOCALES = [
   MapLocale("en", LocaleData.EN),
   MapLocale("de", LocaleData.DE),
   MapLocale("zh", LocaleData.ZH),
-  // MapLocale("zh", LocaleData.ML),
+  MapLocale("ml", LocaleData.ML),
+  MapLocale("ta", LocaleData.TA),
 ];
 mixin LocaleData{
   static const String title = 'title';
@@ -22,8 +23,12 @@ mixin LocaleData{
     title: '本土化',
     body:'欢迎使用本地化的 flutter 应用 %a'
   };
-  // static const Map<String,dynamic> ML={
-  //   title: 'പ്രാദേശികവൽക്കരണം',
-  //   body:'പ്രാദേശികവൽക്കരിച്ച ഫ്ലട്ടർ ആപ്ലിക്കേഷനിലേക്ക് സ്വാഗതം %a'
-  // };
+  static const Map<String,dynamic> ML={
+    title: 'പ്രാദേശികവൽക്കരണം',
+    body:'പ്രാദേശികവൽക്കരിച്ച ഫ്ലട്ടർ ആപ്ലിക്കേഷനിലേക്ക് സ്വാഗതം %a'
+  };
+  static const Map<String,dynamic> TA={
+    title: 'உள்ளூர்மயமாக்கல்',
+    body:'உள்ளூர் ஃப்ளட்டர் பயன்பாட்டிற்கு வரவேற்கிறோம் %a'
+  };
 }

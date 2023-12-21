@@ -6,6 +6,7 @@ List<MapLocale> LOCALES = [
   MapLocale("zh", LocaleData.ZH),
   MapLocale("ml", LocaleData.ML),
   MapLocale("ta", LocaleData.TA),
+  MapLocale("hi", LocaleData.HI),
 ];
 mixin LocaleData{
   static const String title = 'title';
@@ -30,5 +31,9 @@ mixin LocaleData{
   static const Map<String,dynamic> TA={
     title: 'உள்ளூர்மயமாக்கல்',
     body:'உள்ளூர் ஃப்ளட்டர் பயன்பாட்டிற்கு வரவேற்கிறோம் %a'
+  };
+  static const Map<String,dynamic> HI={
+    title: 'स्थानीयकरण',
+    body:'स्थानीयकृत स्पंदन एप्लिकेशन में आपका स्वागत है %a'
   };
 }

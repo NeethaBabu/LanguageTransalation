@@ -15,7 +15,7 @@ class _MultiLanState extends State<MultiLan> {
   late FlutterLocalization _flutterLocalization;
   late String _currentLocale;
 
-  final List<String> languages = ['English', 'German', 'Chinese','Malayalam','Tamil'];
+  final List<String> languages = ['English', 'German', 'Chinese','Malayalam','Tamil','Hindi'];
   String selectedLanguage = 'English';
 
   @override
@@ -85,6 +85,8 @@ class _MultiLanState extends State<MultiLan> {
         return 'ml';
       case 'Tamil':
         return 'ta';
+      case 'Hindi':
+        return 'hi';
       default:
         return 'en';
     }
@@ -104,6 +106,9 @@ class _MultiLanState extends State<MultiLan> {
     }
     else if(value == "ta"){
       _flutterLocalization.translate("ta");
+    }
+    else if(value == "hi"){
+      _flutterLocalization.translate("hi");
     }
     else {
       return;

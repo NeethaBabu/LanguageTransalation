@@ -37,11 +37,6 @@ class NavDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.settings),
-            title: const Text('Settings'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
             leading: const Icon(Icons.border_color),
             title: const Text('Change Language'),
             onTap: () =>  Navigator.of(context).push(
@@ -50,11 +45,6 @@ class NavDrawer extends StatelessWidget {
               ),
             ),
           ),
-          // ListTile(
-          //   leading: Icon(Icons.exit_to_app),
-          //   title: Text('Logout'),
-          //   onTap: () => {Navigator.of(context).pop()},
-          // ),
         ],
       ),
     );
